@@ -1,7 +1,7 @@
 %adj_mat=[0 0 1; 0 0 0; 0 0 0];
 %adj_mat=[0 1 0 0 0;0 0 0 1 0;0 0 0 1 1; 0 0 0 0 0;0 0 0 0 0];
 %adj_mat= [0 0 0 1 0 1;0 0 1 0 0 1;0 0 0 1 0 0;0 0 0 0 1 1;0 0 0 0 0 1;0 0 0 0 0 0];
-iter=10;
+iter=100;
 n=8;
 sA=sA_listgenerator(iter,n);
 %adj_mat = randi([0 1], n,n).*(ones(n)-eye(n));
