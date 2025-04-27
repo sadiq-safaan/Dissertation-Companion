@@ -1,4 +1,5 @@
-%Script producing the state transtion graph for the hyperplane arrangement given by lin. chamber/nullcline partition of a CTLN.  Chambers are labelled in STG in the form (NC,LC) where NC indexes the nullclines the region lies beneath and LC the linear chamber the region lies in.
+%Script producing the state transtion graph for the hyperplane arrangement given by lin. chamber/nullcline partition of a CTLN.  
+%Chambers are labelled in STG in the form (NC,LC) where NC indexes the nullclines the region lies beneath and LC the linear chamber the region lies in.
 
 %Safaan Sadiq October 2023
 
@@ -47,7 +48,6 @@ for i=1:length(chambers)
         lc=0;
     end
     
-    %labels(i)=join(string(nc))+","+join(string(lc));
     
     %Create Region Labels for STG
     l_lc="";
