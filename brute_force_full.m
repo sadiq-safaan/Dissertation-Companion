@@ -7,7 +7,7 @@ function [basin_frac,sinks,indeg]=brute_force_full(sA_list,savetag)
 %
 % Last Updated Oct. 21 2024
 
-iter=2500;
+iter=2500; % Number of initial conditions per DAG
 n=size(sA_list{1},1);
 t_end=50; % Length of simulation
 
@@ -15,7 +15,7 @@ t_end=50; % Length of simulation
 delta=0.5;
 epsilon=0.25;
 theta=1;
-B=1.5*theta;
+B=1.5*theta; % State space box size
 
 for k=1:(length(sA_list))
     sA=sA_list{k};
@@ -31,7 +31,7 @@ for k=1:(length(sA_list))
     basins=zeros(iter,2);
 
     for i=1:iter
-        %Phase Space Sampling of Initial Conditions
+        %State Space Sampling of Initial Conditions
         x0=B*rand(n,1);
 
         %Simulate CTLN
