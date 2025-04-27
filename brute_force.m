@@ -7,7 +7,7 @@ function [basin_frac,sinks,indeg]=brute_force(sA_list,savetag)
 %
 % Last Updated Sept. 19 2024
 
-iter=2500;
+iter=2500; % number of initial conditions sampled per DAG
 n=size(sA_list{1},1);
 eta=0.01; % Maximum size of perturbation
 t_end=50; % Length of simulation
@@ -36,7 +36,7 @@ for k=1:length(sA_list)
     pert_point{k}=x0_orig;
 
     basins=zeros(iter,2);
-    except=[];
+    except=[]; % Create list of cases were trajectory converges to saddle point
     for i=1:iter
         %Saddle Point Perturbation Initial Condition
         pert_v=rand(n,1);
@@ -49,7 +49,9 @@ for k=1:length(sA_list)
         soln = sA2soln(sA,t_end,x0,epsilon,delta,theta);
         es=soln.X(end,:);
         fps=find(es>1e-4);
-        if length(fps)<2
+
+        
+        if length(fps)<2 % i.e. not a saddle point
             basins(i,1)=fps;
         end
 
