@@ -4,7 +4,7 @@ This repository contains the necessary files to recreate and implement the simul
 
 1. Trajectory Graphs
 
-The file "placeholder.m" is a function which takes as inputs the synapthic weights and external drive currents as parameters for a two-dimensional competitive TLN.  It generates a figure depicting a partition of the state space compatible with a trajectory graph as depicted in the figures of Chapter 2.
+The file "placeholder.m" is a function which takes as inputs the synaptic weights and external drive currents as parameters for a two-dimensional competitive TLN.  It generates a figure depicting a partition of the state space compatible with a trajectory graph as depicted in the figures of Chapter 2.
 
 2. State Transition Graph
 
