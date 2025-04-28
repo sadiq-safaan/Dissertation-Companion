@@ -68,7 +68,7 @@ for k=1:length(sA_list)
     
 
     basin_frac{k}=bf;
-    k
+    k % Keep track of progress
 end
 
 % save the results of computation
