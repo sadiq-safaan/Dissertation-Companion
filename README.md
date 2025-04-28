@@ -1,6 +1,6 @@
 # Dissertation-Companion
 
-This repository contains the necessary files to recreate and implement the simulation figures and algorithms in the doctoral dissertation "Modeling Bias in Decision-Making Attractor Networks" by Safaan Sadiq describing research from the years 2021-2025 at Pennsylvania State University in the Department of Mathematics.  All files other than "plot_graph.m", "sA2soln.m", "threshlin_ode.m", and "graph2net.m" were developed by me.
+This repository contains the necessary files to recreate and implement the simulation figures and algorithms in the doctoral dissertation "Modeling Bias in Decision-Making Attractor Networks" by Safaan Sadiq describing research from the years 2021-2025 at Pennsylvania State University in the Department of Mathematics.  The files "plot_graph.m", "sA2soln.m", "threshlin_ode.m", and "graph2net.m" are taken from "https://github.com/nebneuron/CTLN-Basic-2.0".  All other files are originally developed.
 
 1. Trajectory Graphs
 
