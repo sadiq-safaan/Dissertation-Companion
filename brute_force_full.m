@@ -47,7 +47,7 @@ for k=1:(length(sA_list))
     bf=bf(find(bf>0));
 
     basin_frac_full{k}=bf;
-    k
+    k % Keep track of progress
 end
 
 % save the results of computation
