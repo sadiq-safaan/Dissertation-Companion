@@ -35,7 +35,6 @@ for k=1:(length(sA_list))
         x0=B*rand(n,1);
 
         %Simulate CTLN
-        %[t_vec,X] = ode_sim(W,b,t_end,dt,x0);
         soln = sA2soln(sA,t_end,x0,epsilon,delta,theta);
         es=soln.X(end,:);
         fps=find(es>1e-4);
