@@ -12,7 +12,7 @@ The folder "State_Transition_Graph_CTLN" contains the algorithm implementation w
 
 3. Basins of attraction in the Neighborhood of Saddle Points
 
-The datasets "brute_force_sp_n6_1000_2sinksR2.mat" and "brute_force_fulln6_1000_2sinksRFull.mat" are those used to create Fig. 5.2A and Fig 5.2B respectively using the "plotbasinfrac.m" function which takes as input the cell array of DAG adjacency matrices "sAlist", the cell array of sink indegrees "indeg", and the cell array of fractional sizes of the basins of attraction "basin_frac".  Fig 5.3 is obtained using "brute_force_sp_n6_numsink234_500each_2500iter.mat" and by slightly modifying "plotbasinfrac.m" to only consider the DAGs with a particular number of sinks.
+The datasets "brute_force_sp_n6_1000_2sinks.mat" and "brute_force_fulln6_1000_2sinks.mat" are those used to create Fig. 5.2A and Fig 5.2B respectively using the "plotbasinfrac.m" function which takes as input the cell array of DAG adjacency matrices "sAlist", the cell array of sink indegrees "indeg", and the cell array of fractional sizes of the basins of attraction "basin_frac".  Fig 5.3 is obtained using "brute_force_sp_n6_numsink234_500each_2500iter.mat" and by slightly modifying "plotbasinfrac.m" to only consider the DAGs with a particular number of sinks.
 
 For new results, a list of DAGs can be generated using "sA_listgenerator.m".  Corresponding simulation results can be obtained using the files "brute_force.m" and "brute_force_full.m" which randomly sample initial conditions and numerically compute the relative sizes of the basins of attraction in the neighborhood of the saddle point and the state space as a whole respectively.
 
