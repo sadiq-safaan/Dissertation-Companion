@@ -8,7 +8,7 @@ The file "traj_graph_gen.m" is a function which takes as inputs the synaptic wei
 
 2. State Transition Graph
 
-The folder "State_Transition_Graph_CTLN" contains the algorithm implementation which will output a state transition graph for the ReLU hyperplane and nullcline arrangement of a CTLN.  This is an application of Algorithm 1 of the dissertation to this particular hyperplane arrangement.  The main file for users is "stg_main.m" which requires an adjacency matrix for the CTLN graph and a choice of parameters.
+The folder "State_Transition_Graph_CTLN" contains the algorithm implementation which will output a state transition graph for the ReLU hyperplane and nullcline arrangement of a CTLN.  This is an application of Algorithm 1 from Chapter 3 of the dissertation to this particular hyperplane arrangement.  The main file for users is "stg_main.m" which requires an adjacency matrix for the CTLN graph and a choice of parameters.
 
 3. Basins of attraction in the Neighborhood of Saddle Points
 
